@@ -1,0 +1,27 @@
+{
+  "name": "datapilot-gateway",
+  "version": "0.5.0",
+  "description": "DataPilot API gateway: auth, ownership, history, and proxy to the agent service",
+  "main": "src/index.js",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test --test-concurrency=1 test/"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.4",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^6.22.0",
+    "multer": "^2.5.0",
+    "zod": "^4.6.7"
+  }
+}
